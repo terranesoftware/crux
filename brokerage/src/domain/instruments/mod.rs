@@ -1,10 +1,8 @@
 pub mod currency;
+pub mod derivatives;
 pub mod equities;
-pub mod futures;
-pub mod options;
-pub mod settlement;
 
-use crate::domain::instruments::{currency::Currency, equities::Equity, futures::Future, options::Option};
+use crate::domain::instruments::{currency::Currency, equities::Equity, derivatives::{futures::Future, options::Option}};
 
 pub struct Instrument {
     symbol: String,
