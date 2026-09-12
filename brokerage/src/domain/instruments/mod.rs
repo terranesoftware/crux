@@ -2,6 +2,7 @@ pub mod currency;
 pub mod equities;
 pub mod futures;
 pub mod options;
+pub mod settlement;
 
 use crate::domain::instruments::{currency::Currency, equities::Equity, futures::Future, options::Option};
 
