@@ -1,8 +1,8 @@
 pub mod common_stock;
 
-use crate::domain::instruments::equities::common_stock::CommonStock;
+use crate::domain::instruments::underlyings::equities::common_stock::CommonStock;
 
-/// An instrument representing ownership in an entity.
+/// An underlying representing ownership in an entity.
 pub struct Equity {
     kind: EquityKind
 }
