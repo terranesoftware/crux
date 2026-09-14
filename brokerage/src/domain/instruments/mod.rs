@@ -1,8 +1,8 @@
 pub mod currency;
 pub mod derivatives;
-pub mod equities;
+pub mod underlyings;
 
-use crate::domain::instruments::{currency::Currency, equities::Equity, derivatives::{futures::Future, options::Option}};
+use crate::domain::instruments::{currency::Currency, derivatives::Derivative, underlyings::Underlying};
 
 /// A tradable financial entity.
 pub struct Instrument {
@@ -12,8 +12,8 @@ pub struct Instrument {
     currency: Currency
 }
 
+/// Instrument types for `Instrument`.
 pub enum InstrumentKind {
-    Equity(Equity),
-    Future(Future),
-    Option(Option)
+    Derivative(Derivative),
+    Underlying(Underlying),
 }
