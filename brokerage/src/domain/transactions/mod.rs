@@ -1,12 +1,12 @@
-use rust_decimal::Decimal;
+pub mod event;
+
 use time::Timestamp;
 
-use crate::domain::instruments::Instrument;
+use crate::domain::{instruments::Instrument, transactions::event::Event};
 
 /// A record of a trade.
 pub struct Transaction {
     instrument: Instrument,
-    quantity: Decimal,
-    price: Decimal,
+    event: Event,
     time: Timestamp
 }
