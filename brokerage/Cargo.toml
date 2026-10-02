@@ -1,7 +1,8 @@
 [package]
-name = "crux-brokerage"
+name = "brokerage"
 version = "0.1.0"
 edition = "2024"
+license = "Apache-2.0"
 
 [dependencies]
 rust_decimal = "1.43.0"
